@@ -23,9 +23,8 @@
         <div class="lilien-container hidden" id="lilien">
             <!-- Language Buttons -->
             <button class="lang-btn-sq" onclick="switchLanguage('sq')">SQ</button>
-            <button class="lang-btn-mk" onclick="switchLanguage('mk')">MK</button>
-            <button class="lang-btn-tr" onclick="switchLanguage('tr')">TR</button>
             <button class="lang-btn-en" onclick="switchLanguage('en')">EN</button>
+            <button class="lang-btn-tr" onclick="switchLanguage('tr')">TR</button>
             <video class="lilien-video" autoplay loop muted playsinline>
                 <source src="assets/lilien.mp4" type="video/mp4">
             </video>
@@ -93,17 +92,17 @@
                 locationText: "Ahengu",
                 language: "AL"
             },
-            mk: {
-                title: "Покана за Канагјегј",
-                text: "Со срце полно со емоции и љубов, имам задоволство да ве поканам да бидете дел од една посебна вечер за мене, каде секој момент се претвора во незаборавно сеќавање.<br>Вашето присуство ќе биде чест и посебно задоволство за мене на овој нов пат што започнува.",
-                signature: "Со почит и љубов,<br>Беса Рахими Меди",
+            en: {
+                title: "Invitation to Kanaqegj",
+                text: "With a heart full of emotion and love, I have the pleasure to invite you to be part of a special evening for me, where every moment turns into an unforgettable memory.<br>Your presence will be an honor and special pleasure for me on this new journey that is beginning.",
+                signature: "With respect and love,<br>Besa Rahimi Medi",
                 scrollText: "Scroll down",
-                dataTitle: "Дата и час",
-                dataText1: "Петок, 18 јуни 2026",
-                dataText2: "Влез од 18:30 часот",
-                locationTitle: "Ресторан и локација",
-                locationText: "Ахенгу",
-                language: "MK"
+                dataTitle: "Date & Time",
+                dataText1: "Friday, June 18, 2026",
+                dataText2: "Entrance from 18:30",
+                locationTitle: "Restaurant & Location",
+                locationText: "Ahengu",
+                language: "EN"
             },
             tr: {
                 title: "Kınağa Davet",
@@ -116,18 +115,6 @@
                 locationTitle: "Restoran & Konum",
                 locationText: "Ahengu",
                 language: "TR"
-            },
-            en: {
-                title: "Invitation to Kanaqegj",
-                text: "With a heart full of emotion and love, I have the pleasure to invite you to be part of a special evening for me, where every moment turns into an unforgettable memory.<br>Your presence will be an honor and special pleasure for me on this new journey that is beginning.",
-                signature: "With respect and love,<br>Besa Rahimi Medi",
-                scrollText: "Scroll down",
-                dataTitle: "Date & Time",
-                dataText1: "Friday, June 18, 2026",
-                dataText2: "Entrance from 18:30",
-                locationTitle: "Restaurant & Location",
-                locationText: "Ahengu",
-                language: "EN"
             }
         };
 
@@ -143,9 +130,8 @@
         // Button-Zustände aktualisieren
         function updateButtonStates() {
             document.querySelector('.lang-btn-sq').classList.toggle('active', currentLang === 'sq');
-            document.querySelector('.lang-btn-mk').classList.toggle('active', currentLang === 'mk');
-            document.querySelector('.lang-btn-tr').classList.toggle('active', currentLang === 'tr');
             document.querySelector('.lang-btn-en').classList.toggle('active', currentLang === 'en');
+            document.querySelector('.lang-btn-tr').classList.toggle('active', currentLang === 'tr');
         }
 
         // Texte aktualisieren
